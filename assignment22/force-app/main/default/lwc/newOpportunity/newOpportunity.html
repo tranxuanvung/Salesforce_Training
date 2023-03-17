@@ -1,0 +1,12 @@
+<template>
+        <lightning-card title="New Opportunity" icon-name="standard:contact">
+            <template lwc:if={record}>
+                <div>
+                    <p class="label">In Account: {name}</p>
+                    <lightning-button variant="Next" label="Next" title="Primary action" onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button>
+                </div>
+            </template>
+            <template lwc:if={error}>
+            </template>
+        </lightning-card>
+</template>

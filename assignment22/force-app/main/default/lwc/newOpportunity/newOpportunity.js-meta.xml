@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <!-- móc vào một action trong account object -->
+        <target>lightning__RecordAction</target>
+    </targets>
+    <targetConfigs>
+        <!-- Sẽ lấy recordId của record page phục vụ cho component chúng ta đang tạo -->
+        <targetConfig targets="lightning__RecordPage">
+            <property type="String" name="recordId" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
