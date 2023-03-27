@@ -7,6 +7,7 @@ public with sharing class oppController {
         String userName = UserInfo.getName();
         
         if(acc[0].Id == accountId){
+            opp.AccountId = accountId;
             opp.Name = 'Opportunity of ' + userName + ' for ' + acc[0].Name;
             opp.StageName = 'New';
             opp.CloseDate = System.today().addDays(30);
